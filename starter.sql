@@ -1,1 +1,1 @@
-grep -n "SERVEROUTPUT\|answers.sql" test.sh
+cat test.sh
