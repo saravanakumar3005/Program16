@@ -1,1 +1,11 @@
 cat test.sh
+cat > answers.sql <<'EOF'
+SET SERVEROUTPUT ON;
+
+BEGIN
+    FOR i IN 1..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(i);
+    END LOOP;
+END;
+/
+EOF
